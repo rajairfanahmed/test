@@ -15,6 +15,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '',
   },
   module: {
     rules: [
@@ -36,7 +37,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg)$/i,
+        test: /\.(png|jpg|jpeg|webp|gif|svg)$/i,
         type: 'asset/resource',
       },
       {
@@ -63,6 +64,9 @@ module.exports = {
     }),
   ],
   optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
     minimize: true,
     minimizer: [
       new CssMinimizerPlugin(),

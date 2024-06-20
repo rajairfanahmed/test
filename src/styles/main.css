@@ -305,7 +305,7 @@ nav .desktop-view {
 }
 
 .about-section {
-    @apply bg-black p-10;
+    @apply bg-black p-20;
 }
 
 .about-section-content {
@@ -377,5 +377,138 @@ nav .desktop-view {
 @media (min-width: 1536px) {
     .about-section-card {
         max-width: calc(27% - 10px);
+    }
+}
+
+.feature-section {
+    @apply bg-white;
+}
+
+.feature-section-content {
+    @apply mt-32 md:mt-28 sm:mt-28 flex flex-wrap items-center justify-around md:gap-20 sm:gap-20;
+}
+
+.feature-section-content h2 {
+    @apply 2xl:text-8xl xl:text-7xl lg:text-5xl md:text-6xl sm:text-6xl;
+    font-family: 'poppinsbold', sans-serif;
+}
+
+.feature-section-content .buttons {
+    @apply inline-block 2xl:text-4xl xl:text-3xl lg:text-xl md:text-xl sm:text-xl p-2 relative rounded-full overflow-hidden;
+    background-color: var(--secondary-white);
+    border: 2px solid #ff8131;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.buttons .exploration {
+    @apply inline-block relative  py-5 px-8 text-white font-bold z-10 focus:outline-none rounded-full;
+    background-color: #ff8131;
+    color: var(--secondary-black);
+}
+
+.buttons .casestudy {
+    @apply inline-block py-5 px-8 text-black font-bold z-10 relative focus:outline-none rounded-full;
+    background-color: var(--secondary-white);
+}
+
+.feature-projects {
+    @apply p-20 grid grid-cols-1 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 gap-5;
+}
+
+.feature-projects img {
+    @apply h-auto max-w-full rounded-3xl;
+}
+
+.feature-projects h2 {
+    @apply 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-3xl sm:text-3xl;
+    font-family: 'poppins', sans-serif;
+}
+
+.feature-projects h3 {
+    @apply 2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl sm:text-xl;
+    color: var(--secondary-black);
+}
+
+.feature-projects .icon {
+        @apply w-40 h-40 2xl:w-32 2xl:h-32 xl:w-24 xl:h-24 lg:w-20 lg:h-20 md:w-24 md:h-24 sm:w-20 sm:h-20 flex items-center justify-center rounded-full absolute top-[65%] left-[77%];
+    border: 2px solid #ff8131;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.feature-projects .icon i {
+    @apply text-6xl 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-4xl sm:text-3xl;
+    color: #ff8131;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.feature-projects .icon.active,
+.feature-projects .icon:hover {
+    background-color: #ff8131;
+    cursor: pointer;
+}
+
+.feature-projects .icon.active i,
+.feature-projects .icon:hover i {
+    color: var(--secondary-white);
+    cursor: pointer;
+}
+
+@media (max-width: 639px) {
+    .feature-section-content {
+        @apply mt-16 flex flex-wrap items-center justify-around gap-10;
+    }
+
+    .feature-section-content h2 {
+        @apply text-4xl;
+    }
+
+    .feature-section-content .buttons {
+        @apply text-lg p-1;
+    }
+
+    .buttons .exploration,
+    .buttons .casestudy {
+        @apply py-3 px-6 text-base;
+    }
+
+    .feature-projects {
+        @apply p-10 grid grid-cols-1 gap-4;
+    }
+
+    .feature-projects h2 {
+        @apply text-2xl;
+    }
+
+    .feature-projects h3 {
+        @apply text-lg;
+    }
+
+    .feature-projects .icon {
+        @apply w-16 h-16 flex items-center justify-center;
+    }
+
+    .feature-projects .icon i {
+        @apply text-2xl;
+    }
+}
+
+@media (min-width: 1920px) {
+    .feature-projects .icon {
+        @apply w-40 h-40;
+    }
+    .feature-projects .icon i {
+        @apply text-6xl;
     }
 }
