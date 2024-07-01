@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Raja Irfan Ahmed">
+  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <header class="relative">
+    <nav class="container flex items-center justify-between px-2 mx-auto lg:p-5">
+      <a href="index.html">
+        <img src="/logo.png" class="w-20 h-auto" alt="logo">
+      </a>
+      <ul class="items-center justify-center hidden space-x-20 text-lg font-bold lg:flex">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">Service</a></li>
+        <li><a href="#" class="nav-link">Agents</a></li>
+        <li><a href="#" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="items-center justify-center hidden space-x-10 lg:flex">
+        <img src="/search.svg" class="icon" alt="search">
+        <a href="#">
+          <img src="/user.svg" class="icon" alt="user">
+        </a>
+        <button type="submit" class="inline px-3 py-2 bg-[#161312] text-white rounded-md">Sign up</button>
+      </div>
+      <div class="absolute space-y-8 left-0 top-14 sm:text-lg hidden w-full bg-[#FEF7F2] px-3 h-[100vh]" id="nav-menu">
+        <ul class="flex flex-col items-center justify-center space-y-5 font-bold">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="#" class="nav-link">Service</a></li>
+          <li><a href="#" class="nav-link">Agents</a></li>
+          <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="flex flex-col items-center justify-center space-y-5">
+          <img src="/search.svg" class="icon" alt="search">
+          <a href="#">
+            <img src="/user.svg" class="icon" alt="user">
+          </a>
+          <button type="submit" class="inline px-3 py-2 bg-[#161312] text-white rounded-md">Sign up</button>
+        </div>
+      </div>
+      <img src="/menu.svg" class="block cursor-pointer lg:hidden icon hamburger" id="hamburger" alt="menu icon">
+      <img src="/close.svg" class="hidden cursor-pointer icon" id="close" alt="menu icon">
+    </nav>
+  </header>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
