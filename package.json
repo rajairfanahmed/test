@@ -1,15 +1,14 @@
 {
-  "name": "javid-create-js",
+  "name": "raja-irfan-ahmed",
   "version": "1.0.7",
   "description": "Vite Tailwind javascript bable",
   "main": "index.js",
-  
   "bin": {
     "javid": "./index.js"
   },
   "scripts": {
     "dev": "vite",
-    "build": "rm -rf dist && vite build",
+    "build": "del -rf dist && vite build",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
@@ -18,7 +17,7 @@
     "url": "git+https://github.com/javidselimov/jui-library-vite.git"
   },
   "keywords": [],
-  "author": "Javid Salimov",
+  "author": "Raja Irfan Ahmed",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/javidselimov/jui-library-vite/issues"
