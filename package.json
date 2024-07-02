@@ -15,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/javidselimov/jui-library-vite.git"
+    "url": "git+https://github.com/rajairfanahmed/test.git"
   },
   "keywords": [],
   "author": "Raja Irfan Ahmed",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/javidselimov/jui-library-vite/issues"
+    "url": "https://github.com/rajairfanahmed/test/issues"
   },
-  "homepage": "https://github.com/javidselimov/jui-library-vite#readme",
+  "homepage": "https://rajairfanahmed.github.io/test/",
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/plugin-transform-arrow-functions": "^7.20.7",
